@@ -1,0 +1,223 @@
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgba(33, 33, 33, 1);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+#button button{
+    background-color: rgba(255, 214, 0, 1);
+    color:rgba(255, 255, 255, 1);
+    font-size: 28px;
+    border-radius: 12px;
+    width: 180px;
+    margin-left: 2em;
+    margin-top: 1em;
+    
+}
+
+#button button:hover{
+    background-color: rgb(198, 170, 29);
+    color:rgb(209, 209, 209);
+}
+
+#mainTxt{
+    color: rgba(255, 255, 255, 1);
+    font-size: 60px;
+    font-weight: 800;
+    margin-left: 1em;
+}
+#secTxt{
+    color: rgb(138, 134, 134);
+    font-size: 28px;
+    margin-left:2em;
+    margin-top: 2em;
+}
+/* tu zaczyna sie sekcja1*/
+
+#sekcja1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+#Text.sekcja1{
+    width: 50%;
+}
+
+#logo.sekcja1{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+#logo.sekcja1 img{
+    width:100%;
+    height: auto;
+    margin-right: 4em;
+    margin-top: 4em;
+}
+
+/* tu się zakańcza sie sekcja1*/
+
+/* tu zaczyna się sekcja2*/
+.sekcja2.karty > * {
+    position: relative;
+    z-index: 1;
+}
+
+#sekcja2{
+    height: 100vh;
+}
+
+#karty.sekcja2{
+    width: 100%;
+    display: flex;
+}
+#karta1.sekcja2 {
+    height: 550px; 
+    background-image: url(beton2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;         
+    background-position: center;   
+}
+
+#karta2.sekcja2 {
+    height: 550px; 
+    background-image: url(beton1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;         
+    background-position: center;   
+}
+
+#karta3.sekcja2 {
+    height: 550px; 
+    background-image: url(beton3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;         
+    background-position: center;   
+}
+
+.sekcja2.karty {
+    position: relative;
+    background-color: rgb(118, 118, 118);
+    margin: 2em;
+    height: 550px;
+    width: 30%;
+    text-align: center;
+    color: black;
+    font-weight: 800;
+    font-size: 24px;
+    font-weight: 600;
+    overflow: hidden; 
+    transition: background-color 0.3s ease;
+}
+
+.sekcja2.karty::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.522) 0%, transparent 85%);
+    pointer-events: none;
+    transition: width 0.5s ease, height 0.5s ease;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.sekcja2.karty:hover::before {
+    width: 1000px;
+    height: 1000px;
+}
+
+/* tu się zakańcza sie sekcja2*/
+
+/* tu zaczyna się sekcja2*/
+.sekcja3.karty > * {
+    position: relative;
+    z-index: 1;
+}
+
+.sekcja3.karty {
+    position: relative;
+    background-color: rgb(118, 118, 118);
+    margin: 2em;
+    height: 550px;
+    width: 30%;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+    font-weight: 600;
+    overflow: hidden; 
+    transition: background-color 0.3s ease;
+}
+
+.sekcja3.karty::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.522) 0%, transparent 85%);
+    pointer-events: none;
+    transition: width 0.5s ease, height 0.5s ease;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.sekcja3.karty:hover::before {
+    width: 1000px;
+    height: 1000px;
+}   
+
+#karty.sekcja3{
+    width: 100%;
+    display: flex;
+}
+
+#karta1.sekcja3 {
+    height: 550px; 
+    background-image: url(betonlekki.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;         
+    background-position: center;   
+}
+
+#karta2.sekcja3 {
+    height: 550px; 
+    background-image: url(betonciezki.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;         
+    background-position: center;   
+}
+
+#karta3.sekcja3 {
+    height: 550px; 
+    background-image: url(betonzwykly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;         
+    background-position: center;   
+}
+#button.sekcja3{
+    margin-right: 10%;
+    margin-top: 75%;
+    text-decoration: none;
+}
+
+/* tu się zakańcza sie sekcja3*/
